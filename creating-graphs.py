@@ -124,3 +124,5 @@ sub3  =sub2.copy()
 ##seaborn.catplot(x='StartedSmokingAt', y='SmokingStatus', data=sub3,kind="bar",ci=None)
 #fig , ax = plt.subplots()
 #ax.bar(sub3['StartedSmokingAt'],sub3['SmokingStatus'])
+scat4 = seaborn.regplot(x="StartedSmokingAt", y="SmokedEverydayAt", fit_reg=True, data=sub2)
+
